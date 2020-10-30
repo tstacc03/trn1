@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controller;
+
+use Illuminate\Http\Controller;
+
+public class ThisController extends Controller {
+  
+  protected $count;
+  
+  public function __construct() {
+    $this->count = 10;
+  }
+
+  public getCount() {
+    return $this->count;
+  }
+}
